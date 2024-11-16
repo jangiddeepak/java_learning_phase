@@ -1,0 +1,11 @@
+INDEX VERSION 1.134
+/Users/deepakjangid/Desktop/javaLP/javaPractice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1458632741.index
+/JSPProject1/src/main/java
+/Users/deepakjangid/Desktop/javaLP/javaPractice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3253604140.index
+/NoteMakers/src/main/resources
+/Users/deepakjangid/Desktop/javaLP/javaPractice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2228441687.index
+/MyWeatherApp/src/main/java
+/Users/deepakjangid/Desktop/javaLP/javaPractice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1325986462.index
+/NoteTaker1/src/main/resources
+/Users/deepakjangid/Desktop/javaLP/javaPractice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/341097390.index
+/NoteMaker/src/main/resources

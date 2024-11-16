@@ -1,0 +1,4 @@
+browser-choice=0
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="1">\n<system/>\n<external location\="/Applications/Google Chrome.app" name\="Chrome"/>\n<external location\="/Applications/Safari.app" name\="Safari"/>\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://localhost\:8080/MyWeatherApp/MyServlet|*|http\://localhost\:8080/MyWeatherApp/index%20.html|*|http\://localhost\:8080/MyWeatherApp/index .html|*|https\://www.eclipse.org/|*|http\://www.eclipse.org|*|http\://localhost\:8080/MyWeatherApp/MyServlet.java|*|http\://localhost\:8080/MyWeatherApp/index%20.html?|*|

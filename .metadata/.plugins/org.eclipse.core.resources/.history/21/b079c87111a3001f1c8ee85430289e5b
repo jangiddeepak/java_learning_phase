@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MyWeatherApp-Deepak jangid</title>
+</head>
+<body>
+<h1>Welcome to our weather App !!</h1>
+<form action="MyServlet.java" method="post">
+<input name="userInput"></input>
+<button>Submit</button>
+</form>
+
+</body>
+</html>

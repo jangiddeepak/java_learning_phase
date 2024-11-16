@@ -1,0 +1,20 @@
+package practice;
+
+interface pract {
+	void getArea(int length,int breadth);
+	
+}
+class interface1  implements pract{
+	
+	public void getarea(int length,int breadth)
+	{
+		System.out.println("area of rectabgle is "+ (length * breadth));
+	}
+	private void psvm() {
+		// TODO Auto-generated method stub
+		interface1  area = new interface1();
+		area.getarea(10,3);
+		
+
+	}
+}

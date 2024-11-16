@@ -1,0 +1,73 @@
+ package Mypackage;
+
+import jakarta.servlet.ServletException;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+
+public class MyServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public MyServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		// TODO Auto-generated method stub
+		//API Key
+				String apiKey = "9eb0c89b3d0758ba7355cc826b72d5d8";
+				// Get the city from the form input
+		        String city = request.getParameter("InputCity"); 
+
+		        // Create the URL for the OpenWeatherMap API request
+		        String apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+		       
+		        URL url = new URL(apiUrl);
+		        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+	            connection.setRequestMethod("GET");
+	            InputStream inputStream = connection.getInputStream();
+                InputStreamReader reader = new InputStreamReader(inputStream);
+               
+                StringBuilder responseContent = new StringBuilder();
+                Scanner scanner = new Scanner(reader); //taking input from reader
+                while (scanner.hasNext()) {
+                    responseContent.append(scanner.nextLine());
+                }
+                
+             
+                scanner.close();
+                System.out.println(responseContent);
+		
+	
+			
+		}
+                
+
+	}
+
+}
